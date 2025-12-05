@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Barber | Barbería Premium</title>
+    <!-- Fuentes de Google: Playfair Display (Títulos) y Montserrat (Cuerpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Iconos (Usando FontAwesome CDN para iconos vectoriales) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <!-- Placeholder de Logo Redondo -->
+                    <div class="logo-img">
+                        <img src="./assets/images/logo-white.svg" alt="Logo">
+                    </div>
+                    <div class="logo-text">
+                        PABLO BARBER
+                        <span>TU ESTILO</span>
+                    </div>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto" class="gold-text">Agendar</a></li>
+                </ul>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Floating CTA -->
+    <a href="https://wa.me/" target="_blank" class="floating-cta" title="Agendar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content reveal">
+            <h2>Barbería Profesional & Clásica</h2>
+            <h1>TRANSFORMAMOS<br>TU ESTILO</h1>
+            <div style="margin-top: 20px;">
+                <a href="#contacto" class="btn btn-filled">Agendar Turno</a>
+                <a href="#servicios" class="btn" style="color:white; border-color:white;">Ver Servicios</a>
+            </div>
+            <div class="hero-hours">
+                <i class="far fa-clock" style="color: var(--gold);"></i> Lun - Sáb: 10:00 - 20:00
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="nosotros" class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3>Sobre Nosotros</h3>
+                    <h2 class="gold-text">El Arte de la Barbería Tradicional</h2>
+                    <p style="color: var(--text-dim); margin-bottom: 20px;">
+                        Desde 2015, nos dedicamos a rescatar la esencia de la barbería clásica fusionándola con las
+                        tendencias modernas. No solo cortamos cabello, creamos una experiencia donde el caballero
+                        moderno puede relajarse.
+                    </p>
+                    <p>
+                        Nuestro equipo cuenta con más de 10 años de experiencia internacional. Usamos productos premium
+                        y toallas calientes en cada servicio.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Maestros Barberos</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Bebidas de Cortesía</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Ambiente Relax</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Productos Premium</div>
+                    </div>
+                </div>
+                <div class="about-img reveal">
+                    <img src="./assets/images/cortando.png"
+                        alt="Barbero trabajando">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Marquee Section -->
+    <section class="infinite-marquee">
+        <div class="marquee-content">
+            <!-- Items duplicados para efecto infinito -->
+            <div class="marquee-item"><i class="fas fa-star"></i> CORTES CLÁSICOS</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> FADE MODERNO</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> BARBA PERFILADA</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> TOALLA CALIENTE</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> ESTILO PREMIUM</div>
+            <!-- Repetir para el loop sin cortes visuales -->
+            <div class="marquee-item"><i class="fas fa-star"></i> CORTES CLÁSICOS</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> FADE MODERNO</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> BARBA PERFILADA</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> TOALLA CALIENTE</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> ESTILO PREMIUM</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> CORTES CLÁSICOS</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> FADE MODERNO</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> BARBA PERFILADA</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> TOALLA CALIENTE</div>
+            <div class="marquee-item"><i class="fas fa-star"></i> ESTILO PREMIUM</div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicios" class="services section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>Nuestro Menú</span>
+                <h2>Servicios & Precios</h2>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal">
+                    <i class="fas fa-scissors service-icon"></i>
+                    <h3>Corte Clásico</h3>
+                    <div class="service-price">$15.00</div>
+                    <p class="service-desc">Corte a tijera o máquina, lavado y peinado con productos mate.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal">
+                    <div class="popular-tag">Más Elegido</div>
+                    <i class="fas fa-user-tie service-icon"></i>
+                    <h3>Corte + Barba</h3>
+                    <div class="service-price">$25.00</div>
+                    <p class="service-desc">Experiencia completa. Corte de cabello y perfilado de barba con ritual de
+                        toalla.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal">
+                    <i class="fas fa-pump-soap service-icon"></i>
+                    <h3>Afeitado Royal</h3>
+                    <div class="service-price">$12.00</div>
+                    <p class="service-desc">Afeitado tradicional con navaja, toalla caliente y masaje facial.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>Color & Camuflaje</h3>
+                    <div class="service-price">$20.00</div>
+                    <p class="service-desc">Cobertura de canas sutil o cambios de look radicales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="galeria" class="section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>Portfolio</span>
+                <h2>Nuestros Trabajos</h2>
+            </div>
+
+            <div class="gallery-filters reveal">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="fade">Fade/Moderno</button>
+                <button class="filter-btn" data-filter="beard">Barbas</button>
+                <button class="filter-btn" data-filter="classic">Clásicos</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Item 1 -->
+                <div class="gallery-item" data-category="fade">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop"
+                        alt="Corte Fade">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <!-- Item 2 -->
+                <div class="gallery-item" data-category="beard">
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=2070&auto=format&fit=crop"
+                        alt="Barba">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <!-- Item 3 -->
+                <div class="gallery-item" data-category="classic">
+                    <img src="https://images.unsplash.com/photo-1593702295094-aea8c5c13d99?q=80&w=1974&auto=format&fit=crop"
+                        alt="Corte Clásico">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <!-- Item 4 -->
+                <div class="gallery-item" data-category="fade">
+                    <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=2066&auto=format&fit=crop"
+                        alt="Fade Design">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <!-- Item 5 -->
+                <div class="gallery-item" data-category="beard">
+                    <img src="https://images.unsplash.com/photo-1512864084360-7c0c4d0a0845?q=80&w=2070&auto=format&fit=crop"
+                        alt="Barba Perfilada">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <!-- Item 6 -->
+                <div class="gallery-item" data-category="classic">
+                    <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?q=80&w=2070&auto=format&fit=crop"
+                        alt="Estilo Formal">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products (Optional) -->
+    <section class="section-padding" style="background: #151515;">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>Tienda</span>
+                <h2>Productos Destacados</h2>
+            </div>
+            <div class="product-slider reveal">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150/333333/D4AF37?text=Pomade" alt="Pomada">
+                    <h4>Matte Pomade</h4>
+                    <span class="gold-text">$18.00</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150/333333/D4AF37?text=Beard+Oil" alt="Aceite">
+                    <h4>Beard Oil Premium</h4>
+                    <span class="gold-text">$15.00</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150/333333/D4AF37?text=Shave+Gel" alt="Gel">
+                    <h4>Cooling Shave Gel</h4>
+                    <span class="gold-text">$12.00</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150/333333/D4AF37?text=Comb" alt="Peine">
+                    <h4>Carbon Fiber Comb</h4>
+                    <span class="gold-text">$10.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-title reveal">
+                <span>Clientes Felices</span>
+                <h2>Lo que dicen de nosotros</h2>
+            </div>
+            <div class="testimonial-container reveal">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"El mejor fade que me han hecho en años. La atención al detalle es increíble y el lugar tiene una
+                        vibra genial."</p>
+                    <div class="client-info">
+                        <h4>Carlos Ruiz</h4>
+                        <span style="font-size: 0.8rem; color: var(--gold);">Cliente Frecuente</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Servicio de primera. El afeitado con toalla caliente es una experiencia que todos deberían
+                        probar. Muy recomendado."</p>
+                    <div class="client-info">
+                        <h4>Martín Gomez</h4>
+                        <span style="font-size: 0.8rem; color: var(--gold);">Cliente Nuevo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Overlay -->
+    <section class="booking-section">
+        <div class="booking-overlay">
+            <div class="container text-center reveal">
+                <h2>¿Listo para tu cambio de look?</h2>
+                <p style="color:white; margin-top:10px; margin-bottom: 30px;">Reserva tu cita hoy mismo y evita esperas.
+                </p>
+                <div class="booking-options">
+                    <a href="#" class="btn btn-filled"><i class="fab fa-whatsapp"></i> Reservar por WhatsApp</a>
+                    <a href="#contacto" class="btn" style="color:white; border-color:white;">Consultar
+                        Disponibilidad</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="contacto">
+        <div class="contact-container">
+            <div class="contact-form-wrapper">
+                <h3 class="reveal">Contáctanos</h3>
+                <p style="margin-bottom: 25px; color: #888;" class="reveal">Déjanos un mensaje y te responderemos a la
+                    brevedad.</p>
+                <form id="contactForm" class="reveal">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Teléfono / WhatsApp" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="corte">Corte de Cabello</option>
+                            <option value="barba">Barba</option>
+                            <option value="completo">Completo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Mensaje o Preferencia horaria" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-filled" style="width: 100%; border:none;">Enviar
+                        Mensaje</button>
+                </form>
+            </div>
+            <div class="map-wrapper">
+                <!-- Google Map Placeholder - Replace SRC with actual embed link -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d225.25568032964833!2d-57.55704363263273!3d-25.401768178199625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spy!4v1764882534429!5m2!1ses-419!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container" style="margin-bottom: 20px;">
+                        <div class="logo-img" style="width: 40px; height: 40px; font-size: 1rem;">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <div class="logo-text" style="font-size: 1rem;">
+                            GENTLEMAN'S
+                        </div>
+                    </div>
+                    <p style="color: #888; font-size: 0.9rem;">Estilo, tradición y elegancia en cada corte. Tu imagen es
+                        nuestra prioridad.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Horarios</h4>
+                    <ul style="color: #888; font-size: 0.9rem;">
+                        <li>Lunes - Viernes: 10am - 8pm</li>
+                        <li>Sábado: 10am - 6pm</li>
+                        <li>Domingo: Cerrado</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul style="color: #888; font-size: 0.9rem;">
+                        <li><i class="fas fa-map-marker-alt" style="color:var(--gold)"></i> Av. Principal 1234, Ciudad
+                        </li>
+                        <li><i class="fas fa-phone" style="color:var(--gold)"></i> +1 234 567 890</li>
+                        <li class="footer-social" style="margin-top: 20px;">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Pablo Barber. Desarrollado por @NovinhoDev.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Mensaje enviado correctamente</div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
